@@ -3,24 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>moa-flock</artifactId>
+        <artifactId>micros</artifactId>
         <groupId>com.akita</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>micros</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>desk</module>
-        <module>organization</module>
-        <module>portal</module>
-        <module>oss</module>
-        <module>im</module>
-        <module>push</module>
-        <module>task</module>
-        <module>offiacct</module>
-    </modules>
+    <artifactId>im</artifactId>
 
 
 </project>

@@ -5,6 +5,7 @@ import com.akita.moa.auth.service.AuthnService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Mono;
 
 @RestController
 public class AuthnController {
@@ -12,7 +13,7 @@ public class AuthnController {
     private AuthnService service;
 
     @PostMapping("/login")
-    String login(LoginReq req) {
-        return null;
+    Mono<String> login(LoginReq req) {
+        return service.login(req.getUsername(), req.getPassword());
     }
 }

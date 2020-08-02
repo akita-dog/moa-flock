@@ -9,17 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>micros</artifactId>
+    <artifactId>common</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>desk</module>
-        <module>organization</module>
-        <module>portal</module>
-        <module>oss</module>
-        <module>im</module>
-        <module>push</module>
-        <module>task</module>
-        <module>offiacct</module>
+        <module>web</module>
     </modules>
 
 
