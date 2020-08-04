@@ -1,19 +1,20 @@
 package com.akita.moa.portal.rest.api;
 
 import com.akita.moa.common.api.CommonResult;
+import com.akita.moa.portal.entity.ClientVersion;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
-import java.util.Arrays;
-
 @RestController
+@RequestMapping("/client")
 public class ClientController {
 
-    @GetMapping("/{username}/webapps")
-    public Mono<CommonResult> listWebapp(@PathVariable String username) {
-        return Mono.just(CommonResult.success(Arrays.asList("aaa", "bbb")));
+    @GetMapping("/{platform}/version")
+    public Mono<CommonResult<ClientVersion>> clientVersion(@PathVariable String platform) {
+        return Mono.just(CommonResult.success(ClientVersion.builder().platform(platform).version("0.0.1").upgradeLog("第一次测试").build()));
     }
 
 }

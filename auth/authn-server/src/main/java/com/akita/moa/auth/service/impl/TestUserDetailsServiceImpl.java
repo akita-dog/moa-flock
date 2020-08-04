@@ -13,6 +13,10 @@ import java.util.Collections;
 public class TestUserDetailsServiceImpl implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return new User("akita", "123456", Collections.singletonList(new SimpleGrantedAuthority("USER")));
+        if ("akita".equals(username)) {
+            return new User("akita", "123456", Collections.singletonList(new SimpleGrantedAuthority("USER")));
+        }
+
+        throw new UsernameNotFoundException("User not found with username: " + username);
     }
 }

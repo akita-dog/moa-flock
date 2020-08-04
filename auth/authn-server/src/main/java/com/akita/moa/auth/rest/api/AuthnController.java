@@ -1,4 +1,4 @@
-package com.akita.moa.auth.rest;
+package com.akita.moa.auth.rest.api;
 
 import com.akita.moa.auth.dto.req.LoginReq;
 import com.akita.moa.auth.service.AuthnService;
@@ -14,6 +14,6 @@ public class AuthnController {
 
     @PostMapping("/login")
     Mono<String> login(LoginReq req) {
-        return service.login(req.getUsername(), req.getPassword());
+        return Mono.just(service.login(req.getUsername(), req.getPassword()));
     }
 }
