@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Data
-public class JwtConfigs {
+public class JwtConfigure {
     @Value("${jwt.security:MOA_DEFAULT_SECURITY}")
     private String security;
 

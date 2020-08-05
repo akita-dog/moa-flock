@@ -26,12 +26,12 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-security</artifactId>
-        </dependency>
-        <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.akita</groupId>
+            <artifactId>web</artifactId>
         </dependency>
     </dependencies>
 
