@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>moa-flock</artifactId>
+        <groupId>com.akita.moa</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.akita.moa.web-api</groupId>
+    <artifactId>web-api-parent</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>desk</module>
+        <module>organization</module>
+        <module>portal</module>
+        <module>oss</module>
+        <module>im</module>
+        <module>push</module>
+        <module>task</module>
+        <module>offiacct</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.akita.moa.common</groupId>
+            <artifactId>web</artifactId>
+        </dependency>
+    </dependencies>
+
+
+</project>
